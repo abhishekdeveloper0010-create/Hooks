@@ -1,0 +1,293 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+
+
+
+header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 15px 30px;
+
+  margin-bottom: 20px;
+
+  background-color: pink;
+
+  color: #fff;
+}
+
+header .Logo {
+  flex-shrink: 0;
+}
+
+header .Logo h1 {
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+
+
+header .Menu {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+}
+
+header .ul-d-flex {
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+
+  list-style: none;
+}
+
+header .text-white {
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+header .text-white:hover {
+  opacity: 0.75;
+}
+
+
+
+header .ColorOption {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+header .ColorOption .btn {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  color: #fff;
+
+  font-size: 11px;
+
+  transition: 0.3s;
+}
+
+header .ColorOption .btn:hover {
+  transform: scale(1.1);
+
+  background: #fff;
+
+  color: #222;
+}
+
+
+
+@media (max-width: 1100px) {
+
+  header {
+    padding: 15px 20px;
+
+    gap: 15px;
+  }
+
+  header .Logo h1 {
+    font-size: 22px;
+  }
+
+  header .ul-d-flex {
+    gap: 15px;
+  }
+
+  header .text-white {
+    font-size: 15px;
+  }
+
+  header .ColorOption {
+    gap: 7px;
+  }
+
+  header .ColorOption .btn {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+
+@media (max-width: 850px) {
+
+  header {
+    flex-wrap: wrap;
+
+    padding: 15px 20px;
+  }
+
+
+  header .Logo {
+    order: 1;
+  }
+
+
+  header .ColorOption {
+    order: 2;
+  }
+
+
+
+  header .Menu {
+    order: 3;
+
+    width: 100%;
+
+    flex-basis: 100%;
+
+    justify-content: center;
+
+    border-top: 1px solid
+      rgba(255, 255, 255, 0.25);
+
+    padding-top: 12px;
+  }
+
+  header .ul-d-flex {
+    gap: 25px;
+
+    justify-content: center;
+  }
+}
+
+
+
+
+@media (max-width: 600px) {
+
+  header {
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 15px;
+  }
+
+
+
+
+  header .Logo {
+    order: 1;
+
+    text-align: center;
+  }
+
+  header .Logo h1 {
+    font-size: 22px;
+  }
+
+
+
+
+  header .Menu {
+    order: 2;
+
+    width: 100%;
+
+    padding-top: 12px;
+  }
+
+  header .ul-d-flex {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px 20px;
+  }
+
+  header .text-white {
+    font-size: 14px;
+  }
+
+
+ 
+
+  header .ColorOption {
+    order: 3;
+
+    justify-content: center;
+
+    width: 100%;
+
+    gap: 10px;
+  }
+
+  header .ColorOption .btn {
+    width: 40px;
+    height: 40px;
+
+    font-size: 10px;
+  }
+}
+
+
+
+
+@media (max-width: 400px) {
+
+  header {
+    padding: 12px 10px;
+  }
+
+  header .Logo h1 {
+    font-size: 20px;
+  }
+
+  header .ul-d-flex {
+    gap: 8px 15px;
+  }
+
+  header .text-white {
+    font-size: 13px;
+  }
+
+  header .ColorOption {
+    gap: 7px;
+  }
+
+  header .ColorOption .btn {
+    width: 35px;
+    height: 35px;
+
+    font-size: 9px;
+  }
+}
+
